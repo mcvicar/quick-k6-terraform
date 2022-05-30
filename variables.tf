@@ -1,5 +1,6 @@
 variable "image_id" {
   type        = string
+  default     = "ami-00c90dbdc12232b58"
   description = "The id of the machine image (AMI) to use for the server."
 }
 
@@ -22,7 +23,8 @@ variable "security_groups" {
 
 variable "key_name" {
   type        = string
-  description = "The instance type"
+  default     = "terraform-key"
+  description = "The instance key"
 }
 
 variable "private_key_location" {
